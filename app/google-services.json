@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1069898967593",
+    "project_id": "smarhouselab2",
+    "storage_bucket": "smarhouselab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069898967593:android:b85a4b81f5c313ac780a38",
+        "android_client_info": {
+          "package_name": "com.example.lab2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069898967593-krpng6pukmhvarilr0mntt0ortf7b159.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHPS5RbIDTCwpZ-k2ybttj7gnY5lWPLFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069898967593-krpng6pukmhvarilr0mntt0ortf7b159.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

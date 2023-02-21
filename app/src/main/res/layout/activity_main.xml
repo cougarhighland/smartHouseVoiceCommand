@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start">
+        <TextView
+            android:id="@+id/lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAMP"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/toggleLamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="OFF"
+            android:textSize="30dp" />
+        <ImageView
+            android:id="@+id/lampImg"
+            android:layout_width="54dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/ic_baseline_lightoff_mode_24"
+            android:contentDescription="light" />
+
+            <Switch
+                android:id="@+id/lampSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+      >
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start">
+        <TextView
+            android:id="@+id/door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOOR"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/toggleDoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLOSED"
+            android:layout_marginLeft="5dp"
+            android:textSize="30dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView
+            android:id="@+id/doorImg"
+            android:layout_width="54dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/door_closed"
+            android:contentDescription="light" />
+
+            <Switch
+                android:id="@+id/doorSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:gravity="start">
+        <TextView
+            android:id="@+id/window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINDOW"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="155dp" />
+        <TextView
+            android:id="@+id/toggleWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLOSED"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="307dp" />
+        <ImageView
+            android:id="@+id/windowImage"
+            android:layout_width="54dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/window_close"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="138dp"
+            android:contentDescription="light" />
+        <Switch
+            android:id="@+id/windowSwitch"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:layout_editor_absoluteX="234dp"
+            tools:layout_editor_absoluteY="147dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/mic_24"
+        app:tint="@color/teal_700" />
+
+    <!--creating text view on below line-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mic"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Click on Mic to speak"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>
+</layout>
